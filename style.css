@@ -607,6 +607,9 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+.order-box:hover .order-titel {
+  color: #f4bf06;
+}
 
 .order-titel {
   text-align: center;
@@ -618,7 +621,8 @@ body {
 
 .order-info {
   border-top: 2px solid #460000;
-  padding: 15px;
+  padding: 15px 0;
+  line-height: 1.4em;
 }
 
 .box-review {
@@ -1187,4 +1191,3 @@ body {
   color: #f4bf06;
 }
 
-/*# sourceMappingURL=style.css.map */
