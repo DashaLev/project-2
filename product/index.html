@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-xs-4 col-sm-4 col-md-3 flex-start flex-centr">
+                    <div class="logo-box">
+                        <a href="../index.html" class="logo"><img src="images/logo.png" alt="" class="logo-img"></a>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-8 flex-order">
+                    <ul class="menu navigation hidden-menu">
+                        <li><a href="../index.html">ГОЛОВНА</a></li>
+                        <li><a href="index.html">ПРОДУКЦІЯ</a></li>
+                        <li><a href="../order/index.html">ЯК ЗАМОВИТИ</a></li>
+                        <li><a href="../about-us/index.html">ПРО НАС</a></li>
+                        <li><a href="../contact/index.html">КОНТАКТИ</a></li>
+                        <li class="flex-centr">
+                            <a href="#"><div class="language-ua"></div></a>
+                            <a href="#"><div class="language-ru"></div></a>
+                        </li>
+                    </ul>
+                    <div class="nav-mobile-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-1 flex-end">
+                    <div class="cart"><div class="cart-calc">0</div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 hide-sm">
+                    <div class="kroshki">
+                        <span><a href="../index.html">Головна</a> / Продукція</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 class="section-title">
+                        Продукція:
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 hide-sm">
+                    <div class="filter-box">
+                        <div><span class="filter-name">Вид продукції:</span>
+                            <div class="box-checkbox">
+                                <input type="checkbox" id="1" class="filtr-radio">
+                                <label for="1" class="lable-filtr-radio"><span class="product-one product-filter-name">Мед у сотах</span></label>
+                            </div>
+                            <div class="box-checkbox">
+                                <input type="checkbox" id="2" class="filtr-radio">
+                                <label for="2" class="lable-filtr-radio"><span class="product-two product-filter-name">Мед з горіхами</span></label>
+                            </div>
+                            <div class="box-checkbox">
+                                <input type="checkbox" id="3" class="filtr-radio">
+                                <label for="3" class="lable-filtr-radio"><span class="product-three product-filter-name">Крем-мед</span></label>
+                            </div>
+                            <div class="box-checkbox">
+                                <input type="checkbox" id="4" class="filtr-radio">
+                                <label for="4" class="lable-filtr-radio"><span class="product-else product-filter-name">Інша продукція</span></label>
+                            </div>
+                        </div>
+                        <!-- <div><span class="filter-name">Об'єм:</span>
+                            <div class="box-checkbox">
+                                <input type="radio" id="5" class="filtr-radio">
+                                <label for="5" class="lable-filtr-radio"></label>
+                            </div>
+                            <div class="box-checkbox">
+                                <input type="radio" id="6" class="filtr-radio">
+                                <label for="6" class="lable-filtr-radio"></label>
+                            </div>
+                            <div class="box-checkbox">
+                                <input type="radio" id="7" class="filtr-radio">
+                                <label for="7" class="lable-filtr-radio"></label>
+                            </div>
+                            <div class="box-checkbox">
+                                <input type="radio" id="8" class="filtr-radio">
+                                <label for="8" class="lable-filtr-radio"></label>
+                            </div>
+                        </div>   -->
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-10">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4 product-hide">
+                            <div class="products-range products-box">
+                                <img src="images/migdal-120.jpg" alt="" class="images-item-product hide">
+                                <img src="images/migdal-220.jpg" alt="" class="images-item-product hide">
+                                <img src="images/med-v-sotah.jpeg" alt="" class="images-item-product show">
+                                <img src="images/migdal-1400.jpg" alt="" class="images-item-product hide">
+                                <h2 class="product-name"><span class="group-product">Мед у сотах</span> Акація</h2>
+                                <div class="row">
+                                    <!-- <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">120 грам</div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">220 грам</div>
+                                    </div> -->
+                                    <div class="col-xs-12">
+                                        <div class="product-weight active">470 грам</div>
+                                    </div>
+                                    <!-- <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">1400 грам</div>
+                                    </div> -->
+                                </div>
+                                <h3 class="product-quantity">Количество:</h3>
+                                <div class="product-quantity-box">
+                                    <button class="minus">-</button>
+                                    <input class="input-product" value="1" disabled>
+                                    <button class="plus">+</button>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-product">
+                                        Ціна: <span class="price">100</span> грн
+                                    </div>
+                                </div>
+                                <div class="summ-box">
+                                    <div class="summ-all">Сума: <span class="summ">0</span> UAH</div> 
+                                </div>
+                                <div class="product-order-box">
+                                    <button class="product-order">У кошик</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 product-hide">
+                            <div class="products-range products-box">
+                                <img src="images/migdal-120.jpg" alt="" class="images-item-product hide">
+                                <img src="images/migdal-220.jpg" alt="" class="images-item-product hide">
+                                <img src="images/med-v-sotah.jpeg" alt="" class="images-item-product show">
+                                <img src="images/migdal-1400.jpg" alt="" class="images-item-product hide">
+                                <h2 class="product-name"><span class="group-product">Мед у сотах</span> Різнотрав'я</h2>
+                                <div class="row">
+                                    <!-- <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">120 грам</div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">220 грам</div>
+                                    </div> -->
+                                    <div class="col-xs-12">
+                                        <div class="product-weight active">470 грам</div>
+                                    </div>
+                                    <!-- <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">1400 грам</div>
+                                    </div> -->
+                                </div>
+                                <h3 class="product-quantity">Количество:</h3>
+                                <div class="product-quantity-box">
+                                    <button class="minus">-</button>
+                                    <input class="input-product" value="1" disabled>
+                                    <button class="plus">+</button>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-product">
+                                        Ціна: <span class="price">200</span> грн
+                                    </div>
+                                </div>
+                                <div class="summ-box">
+                                    <div class="summ-all">Сума: <span class="summ">0</span> грн</div> 
+                                </div>
+                                <div class="product-order-box">
+                                    <button class="product-order">У кошик</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 product-hide">
+                            <div class="products-range products-box">
+                                <img src="images/migdal-120.jpg" alt="" class="images-item-product hide">
+                                <img src="images/migdal-220.jpg" alt="" class="images-item-product hide">
+                                <img src="images/med-v-sotah.jpeg" alt="" class="images-item-product show">
+                                <img src="images/migdal-1400.jpg" alt="" class="images-item-product hide">
+                                <h2 class="product-name"><span class="group-product">Мед у сотах</span> Липа</h2>
+                                <div class="row">
+                                    <!-- <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">120 грам</div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">220 грам</div>
+                                    </div> -->
+                                    <div class="col-xs-12">
+                                        <div class="product-weight active">470 грам</div>
+                                    </div>
+                                    <!-- <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">1400 грам</div>
+                                    </div> -->
+                                </div>
+                                <h3 class="product-quantity">Количество:</h3>
+                                <div class="product-quantity-box">
+                                    <button class="minus">-</button>
+                                    <input class="input-product" value="1" disabled>
+                                    <button class="plus">+</button>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-product">
+                                        Ціна: <span class="price">300</span> грн
+                                    </div>
+                                </div>
+                                <div class="summ-box">
+                                    <div class="summ-all">Сума: <span class="summ">0</span> UAH</div> 
+                                </div>
+                                <div class="product-order-box">
+                                    <button class="product-order">У кошик</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 product-hide">
+                            <div class="products-range products-box">
+                                <img src="images/migdal-120.jpg" alt="" class="images-item-product hide">
+                                <img src="images/migdal-220.jpg" alt="" class="images-item-product hide">
+                                <img src="images/nat-foon-470.jpg" alt="" class="images-item-product show">
+                                <img src="images/migdal-1400.jpg" alt="" class="images-item-product hide">
+                                <h2 class="product-name"><span class="group-product">Мед з горіхами</span> Фундук</h2>
+                                <div class="row">
+                                    <!-- <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">120 грам</div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">220 грам</div>
+                                    </div> -->
+                                    <div class="col-xs-12">
+                                        <div class="product-weight active">470 грам</div>
+                                    </div>
+                                    <!-- <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">1400 грам</div>
+                                    </div> -->
+                                </div>
+                                <h3 class="product-quantity">Количество:</h3>
+                                <div class="product-quantity-box">
+                                    <button class="minus">-</button>
+                                    <input class="input-product" value="1" disabled>
+                                    <button class="plus">+</button>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-product">
+                                        Ціна: <span class="price">100</span> грн
+                                    </div>
+                                </div>
+                                <div class="summ-box">
+                                    <div class="summ-all">Сума: <span class="summ">0</span> UAH</div> 
+                                </div>
+                                <div class="product-order-box">
+                                    <button class="product-order">У кошик</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 product-hide">
+                            <div class="products-range products-box">
+                                <img src="images/migdal-120.jpg" alt="" class="images-item-product hide">
+                                <img src="images/migdal-220.jpg" alt="" class="images-item-product hide">
+                                <img src="images/migdal-470.jpg" alt="" class="images-item-product show">
+                                <img src="images/migdal-1400.jpg" alt="" class="images-item-product hide">
+                                <h2 class="product-name"><span class="group-product">Мед з горіхами</span> Мигдаль</h2>
+                                <div class="row">
+                                    <!-- <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">120 грам</div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">220 грам</div>
+                                    </div> -->
+                                    <div class="col-xs-12">
+                                        <div class="product-weight active">470 грам</div>
+                                    </div>
+                                    <!-- <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">1400 грам</div>
+                                    </div> -->
+                                </div>
+                                <h3 class="product-quantity">Количество:</h3>
+                                <div class="product-quantity-box">
+                                    <button class="minus">-</button>
+                                    <input class="input-product" value="1" disabled>
+                                    <button class="plus">+</button>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-product">
+                                        Ціна: <span class="price">200</span> грн
+                                    </div>
+                                </div>
+                                <div class="summ-box">
+                                    <div class="summ-all">Сума: <span class="summ">0</span> грн</div> 
+                                </div>
+                                <div class="product-order-box">
+                                    <button class="product-order">У кошик</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 product-hide">
+                            <div class="products-range products-box">
+                                <img src="images/migdal-120.jpg" alt="" class="images-item-product hide">
+                                <img src="images/migdal-220.jpg" alt="" class="images-item-product hide">
+                                <img src="images/nat-ksh-470.jpg" alt="" class="images-item-product show">
+                                <img src="images/migdal-1400.jpg" alt="" class="images-item-product hide">
+                                <h2 class="product-name"><span class="group-product">Мед з горіхами</span> Кеш'ю</h2>
+                                <div class="row">
+                                    <!-- <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">120 грам</div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">220 грам</div>
+                                    </div> -->
+                                    <div class="col-xs-12">
+                                        <div class="product-weight active">470 грам</div>
+                                    </div>
+                                    <!-- <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">1400 грам</div>
+                                    </div> -->
+                                </div>
+                                <h3 class="product-quantity">Количество:</h3>
+                                <div class="product-quantity-box">
+                                    <button class="minus">-</button>
+                                    <input class="input-product" value="1" disabled>
+                                    <button class="plus">+</button>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-product">
+                                        Ціна: <span class="price">300</span> грн
+                                    </div>
+                                </div>
+                                <div class="summ-box">
+                                    <div class="summ-all">Сума: <span class="summ">0</span> UAH</div> 
+                                </div>
+                                <div class="product-order-box">
+                                    <button class="product-order">У кошик</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 product-hide">
+                            <div class="products-range products-box">
+                                <img src="images/migdal-120.jpg" alt="" class="images-item-product hide">
+                                <img src="images/migdal-220.jpg" alt="" class="images-item-product hide">
+                                <img src="images/crem-cho-470.jpg" alt="" class="images-item-product show">
+                                <img src="images/migdal-1400.jpg" alt="" class="images-item-product hide">
+                                <h2 class="product-name"><span class="group-product">Крем-мед</span> Шоколадний</h2>
+                                <div class="row">
+                                    <!-- <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">120 грам</div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">220 грам</div>
+                                    </div> -->
+                                    <div class="col-xs-12">
+                                        <div class="product-weight active">470 грам</div>
+                                    </div>
+                                    <!-- <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">1400 грам</div>
+                                    </div> -->
+                                </div>
+                                <h3 class="product-quantity">Количество:</h3>
+                                <div class="product-quantity-box">
+                                    <button class="minus">-</button>
+                                    <input class="input-product" value="1" disabled>
+                                    <button class="plus">+</button>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-product">
+                                        Ціна: <span class="price">100</span> грн
+                                    </div>
+                                </div>
+                                <div class="summ-box">
+                                    <div class="summ-all">Сума: <span class="summ">0</span> UAH</div> 
+                                </div>
+                                <div class="product-order-box">
+                                    <button class="product-order">У кошик</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 product-hide">
+                            <div class="products-range products-box">
+                                <img src="images/migdal-120.jpg" alt="" class="images-item-product hide">
+                                <img src="images/migdal-220.jpg" alt="" class="images-item-product hide">
+                                <img src="images/crem-malina-470.jpg" alt="" class="images-item-product show">
+                                <img src="images/migdal-1400.jpg" alt="" class="images-item-product hide">
+                                <h2 class="product-name"><span class="group-product">Крем-мед</span> Малина</h2>
+                                <div class="row">
+                                    <!-- <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">120 грам</div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">220 грам</div>
+                                    </div> -->
+                                    <div class="col-xs-12">
+                                        <div class="product-weight active">470 грам</div>
+                                    </div>
+                                    <!-- <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">1400 грам</div>
+                                    </div> -->
+                                </div>
+                                <h3 class="product-quantity">Количество:</h3>
+                                <div class="product-quantity-box">
+                                    <button class="minus">-</button>
+                                    <input class="input-product" value="1" disabled>
+                                    <button class="plus">+</button>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-product">
+                                        Ціна: <span class="price">200</span> грн
+                                    </div>
+                                </div>
+                                <div class="summ-box">
+                                    <div class="summ-all">Сума: <span class="summ">0</span> грн</div> 
+                                </div>
+                                <div class="product-order-box">
+                                    <button class="product-order">У кошик</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 product-hide">
+                            <div class="products-range products-box">
+                                <img src="images/migdal-120.jpg" alt="" class="images-item-product hide">
+                                <img src="images/migdal-220.jpg" alt="" class="images-item-product hide">
+                                <img src="images/crem-chorno-470.jpg" alt="" class="images-item-product show">
+                                <img src="images/migdal-1400.jpg" alt="" class="images-item-product hide">
+                                <h2 class="product-name"><span class="group-product">Крем-мед</span> Чорнослив</h2>
+                                <div class="row">
+                                    <!-- <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">120 грам</div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">220 грам</div>
+                                    </div> -->
+                                    <div class="col-xs-12">
+                                        <div class="product-weight active">470 грам</div>
+                                    </div>
+                                    <!-- <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">1400 грам</div>
+                                    </div> -->
+                                </div>
+                                <h3 class="product-quantity">Количество:</h3>
+                                <div class="product-quantity-box">
+                                    <button class="minus">-</button>
+                                    <input class="input-product" value="1" disabled>
+                                    <button class="plus">+</button>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-product">
+                                        Ціна: <span class="price">300</span> грн
+                                    </div>
+                                </div>
+                                <div class="summ-box">
+                                    <div class="summ-all">Сума: <span class="summ">0</span> UAH</div> 
+                                </div>
+                                <div class="product-order-box">
+                                    <button class="product-order">У кошик</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 product-hide">
+                            <div class="products-range products-box">
+                                <img src="images/migdal-120.jpg" alt="" class="images-item-product hide">
+                                <img src="images/migdal-220.jpg" alt="" class="images-item-product hide">
+                                <img src="images/6007832014.jpg" alt="" class="images-item-product show">
+                                <img src="images/migdal-1400.jpg" alt="" class="images-item-product hide">
+                                <h2 class="product-name"><span class="group-product">Інша продукція</span> Пильца</h2>
+                                <div class="row">
+                                    <!-- <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">120 грам</div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">220 грам</div>
+                                    </div> -->
+                                    <div class="col-xs-12">
+                                        <div class="product-weight active">470 грам</div>
+                                    </div>
+                                    <!-- <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">1400 грам</div>
+                                    </div> -->
+                                </div>
+                                <h3 class="product-quantity">Количество:</h3>
+                                <div class="product-quantity-box">
+                                    <button class="minus">-</button>
+                                    <input class="input-product" value="1" disabled>
+                                    <button class="plus">+</button>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-product">
+                                        Ціна: <span class="price">300</span> грн
+                                    </div>
+                                </div>
+                                <div class="summ-box">
+                                    <div class="summ-all">Сума: <span class="summ">0</span> UAH</div> 
+                                </div>
+                                <div class="product-order-box">
+                                    <button class="product-order">У кошик</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 product-hide">
+                            <div class="products-range products-box">
+                                <img src="images/migdal-120.jpg" alt="" class="images-item-product hide">
+                                <img src="images/migdal-220.jpg" alt="" class="images-item-product hide">
+                                <img src="images/propolis-1000x1000.jpg" alt="" class="images-item-product show">
+                                <img src="images/propolis-1000x1000.jpg" alt="" class="images-item-product hide">
+                                <h2 class="product-name"><span class="group-product">Інша продукція</span> Прополіс</h2>
+                                <div class="row">
+                                    <!-- <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">120 грам</div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">220 грам</div>
+                                    </div> -->
+                                    <div class="col-xs-12">
+                                        <div class="product-weight active">470 грам</div>
+                                    </div>
+                                    <!-- <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">1400 грам</div>
+                                    </div> -->
+                                </div>
+                                <h3 class="product-quantity">Количество:</h3>
+                                <div class="product-quantity-box">
+                                    <button class="minus">-</button>
+                                    <input class="input-product" value="1" disabled>
+                                    <button class="plus">+</button>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-product">
+                                        Ціна: <span class="price">300</span> грн
+                                    </div>
+                                </div>
+                                <div class="summ-box">
+                                    <div class="summ-all">Сума: <span class="summ">0</span> UAH</div> 
+                                </div>
+                                <div class="product-order-box">
+                                    <button class="product-order">У кошик</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 product-hide">
+                            <div class="products-range products-box">
+                                <img src="images/migdal-120.jpg" alt="" class="images-item-product hide">
+                                <img src="images/migdal-220.jpg" alt="" class="images-item-product hide">
+                                <img src="images/milck.jpg" alt="" class="images-item-product show">
+                                <img src="images/migdal-1400.jpg" alt="" class="images-item-product hide">
+                                <h2 class="product-name"><span class="group-product">Інша продукція</span> Маточне молочко</h2>
+                                <div class="row">
+                                    <!-- <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">120 грам</div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">220 грам</div>
+                                    </div> -->
+                                    <div class="col-xs-12">
+                                        <div class="product-weight active">470 грам</div>
+                                    </div>
+                                    <!-- <div class="col-xs-12 col-sm-6">
+                                        <div class="product-weight">1400 грам</div>
+                                    </div> -->
+                                </div>
+                                <h3 class="product-quantity">Количество:</h3>
+                                <div class="product-quantity-box">
+                                    <button class="minus">-</button>
+                                    <input class="input-product" value="1" disabled>
+                                    <button class="plus">+</button>
+                                </div>
+                                <div class="price-box">
+                                    <div class="price-product">
+                                        Ціна: <span class="price">300</span> грн
+                                    </div>
+                                </div>
+                                <div class="summ-box">
+                                    <div class="summ-all">Сума: <span class="summ">0</span> UAH</div> 
+                                </div>
+                                <div class="product-order-box">
+                                    <button class="product-order">У кошик</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                       
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-xs-12 col-sm-3 col-md-2 xs-flex">
+                    <div class="logo-box">
+                        <a href="../index.html" class="logo-footer"><img src="images/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 xs-flex">
+                    <ul class="menu-footer">
+                        <li><a href="../index.html">ГОЛОВНА</a></li>
+                        <li><a href="index.html">ПРОДУКЦІЯ</a></li>
+                        <li><a href="../order/index.html">ЯК ЗАМОВИТИ</a></li>
+                        <li><a href="../about-us/index.html">ПРО НАС</a></li>
+                        <li><a href="../contact/index.html">КОНТАКТИ</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-5 xs-flex">
+                    <div class="contacts-info info-footer">ПН-ПТ: 08:00 до 18:00</div>
+                    <div class="contacts-info info-footer">e-mail:
+                        <span>info@chtoto</span>
+                    </div>
+                    <div class="contacts-info info-footer">Контактний телефон:<br>
+                            <span class="number-footer">+38(067)000-00-00</span>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-2 xs-flex">
+                    <div class="contacts-social-network">
+                        <div class="social-network-fb-ft"></div>
+                        <div class="social-network-inst-ft"></div>
+                        <div class="social-network-viber-ft"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
